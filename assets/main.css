@@ -1,0 +1,256 @@
+/* font */
+@font-face {
+  font-family: "milliard-book";
+  src: url("../assets/milliard_book.otf") format("opentype");
+}
+
+/* header, logo, etc */
+@media screen {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-text {
+    letter-spacing: 5px;
+    color: #333;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  h1, h3, p, span {
+    font-family: milliard-book,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #333;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .header-logo img {
+    max-width: 100%;
+  }
+
+  .header-links {
+    margin-left: auto;
+    margin-top: 17px;
+  }
+
+  .header-nav-link {
+    margin: auto 10px;
+    text-decoration: none;
+    font-family: milliard-book,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #333;
+    font-weight: 400;
+    font-size: 1.5em;
+  }
+
+  .header-social {
+    display: flex;
+    margin-right: auto;
+  }
+
+  .header-social-link {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .icon-social {
+    width: 20px;
+  }
+  .footer {
+    margin: 50px auto;
+  }
+}
+
+hr {
+  width: 75%;
+  color: #999;
+  margin: 50px auto;
+}
+
+/* buttons */
+
+.btn-container {
+  margin-top: 30px;
+  display: flex;
+}
+
+.btn {
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 2px;
+  background-color: transparent;
+  padding: 13px 26px;
+  margin-top: 10px;
+  font-family: milliard-book,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+}
+
+.btngrp:first-child {
+  margin-left: auto;
+  margin-right: 10px;
+}
+.btngrp:last-child {
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.btn:hover {
+  background-color: #272727;
+  color: #fff;
+}
+
+.singlebtn {
+  margin: auto;
+}
+
+/* Film list, main home page content */
+.filmlist {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.embedfilm:first-child {
+  margin-top: 0;
+}
+
+/* contact page */
+.contact-body, p {
+  text-align: left;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+}
+.contact-body {
+  display: flex;
+  flex-direction: column;
+}
+.contact-body > p {
+  width: 60%;
+  margin: 10px auto;
+}
+
+.contact-link-list {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* second shooting page */
+.secondshooting-body {
+  display: flex;
+  flex-direction: column;
+}
+.secondshooting-hero {
+  margin: auto;
+}
+.secondshooting-body > p {
+  font-weight: 400;
+  letter-spacing: 0.28px;
+}
+.secondshooting-content {
+  font-weight: 400;
+  letter-spacing: 0.28px;
+  display: flex;
+  justify-content: space-between;
+}
+.secondshooting-content-item {
+  margin: 0 10px;
+}
+.secondshooting-content > h3 {
+  text-align: left;
+  letter-spacing: 0.28px;
+  font-weight: 600;
+}
+.secondshooting-links {
+  text-align: center;
+  margin-left: 20px;
+}
+.secondshooting-links > h3 {
+  letter-spacing: 0.28px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* responsive concerns */
+
+@media screen and (min-width: 451px) {
+  
+  .header-links {
+    text-align: right;
+    margin-top: 41px;
+  }
+  
+  .header-nav-link:last-child {
+    margin-right: 50px;
+  }
+
+  .header-links, .header-social {
+    flex-basis: 25%;
+  }
+
+  .header-social-link {
+    margin-left: 10px;
+    margin-top: 41px;
+  }
+  .header-social-link:first-child {
+    margin-left: 75px;
+  }
+
+  .header-logo {
+    width: 15%;
+  }
+  .embedfilm {
+    width: 75%;
+    margin: 25px auto;
+  }
+  .secondshooting-hero {
+    width: 75%;
+  }
+  .secondshooting-profile {
+    max-height: 350px;
+  }
+  .secondshooting-content {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header-links, .header-social {
+    flex-basis: 31%;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header-logo {
+    display: flex;
+    order: -1;
+    margin: auto;
+    width: 45%;
+  }
+  .header-social, .header-links {
+    margin: 15px auto 0 auto;
+  }
+  .header-social-link:first-child {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .header-social-link:last-child {
+    margin-left: 10px;
+    margin-right: auto;
+  }
+  .secondshooting-hero {
+    width: 100%;
+  }
+  .secondshooting-content {
+    flex-direction: column
+  }
+}
+
+
