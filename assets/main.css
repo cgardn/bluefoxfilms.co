@@ -116,10 +116,6 @@ hr {
   margin-bottom: 50px;
 }
 
-.embedfilm:first-child {
-  margin-top: 0;
-}
-
 /* contact page */
 .contact-body, p {
   text-align: left;
@@ -210,6 +206,10 @@ hr {
   .embedfilm {
     width: 75%;
     margin: 25px auto;
+    padding: 37% 0 0 0;
+  }
+  .embedfilm:first-child {
+    margin-top: 0;
   }
   .secondshooting-hero {
     width: 75%;
@@ -247,6 +247,11 @@ hr {
   .header-social-link:last-child {
     margin-left: 10px;
     margin-right: auto;
+  }
+  .embedfilm {
+    width: 100%;
+    margin-top: 30px;
+    padding: 55% 0 0 0;
   }
   .secondshooting-hero {
     width: 100%;
