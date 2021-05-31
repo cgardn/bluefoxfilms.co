@@ -19,7 +19,7 @@
     font-weight: 400;
   }
   
-  h1, h3, p, span {
+  h1, h3, p, span, li {
     font-family: milliard-book,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #333;
     text-align: center;
@@ -52,6 +52,7 @@
   .header-social-link {
     margin-left: 20px;
     margin-right: 10px;
+    text-decoration: none;
   }
 
   .icon-social {
@@ -138,6 +139,8 @@ hr {
   text-align: center;
   list-style-type: none;
   padding: 0;
+  line-height: 2em;
+  font-size: 18px;
 }
 
 /* second shooting page */
